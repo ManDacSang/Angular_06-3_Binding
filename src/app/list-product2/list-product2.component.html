@@ -1,0 +1,27 @@
+<p>list-product2 works!</p>
+<!-- <table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Image</th>
+  </tr>
+  <tbody *ngFor="let p of Products">
+    <tr>
+      <td>{{ p.ID }}</td>
+      <td>{{ p.name }}</td>
+      <td>{{ p.price }}</td>
+      <td><img src="{{ p.image }}" alt="" /></td>
+    </tr>
+  </tbody>
+</table> -->
+<div class="big_container">
+  <div class="container" *ngFor="let p of Products">
+    <div class="imgSp">
+      <img src="{{ p.image }}" alt="" />
+    </div>
+    <div class="nameSp">{{ p.name }}</div>
+
+    <div class="priceSp">{{ p.price }}</div>
+  </div>
+</div>

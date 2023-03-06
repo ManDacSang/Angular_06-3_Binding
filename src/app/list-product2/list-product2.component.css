@@ -1,0 +1,30 @@
+img {
+  width: 150px;
+  height: 150px;
+}
+.big_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgb(47, 39, 39);
+  padding: 10px;
+  margin: 10px;
+}
+.container div {
+  text-align: center;
+}
+.priceSp {
+  color: darkred;
+  display: block;
+  background-color: rgb(182, 136, 224);
+}
+.nameSp {
+  font-weight: bolder;
+  background-color: rgb(201, 70, 70);
+}
+.container:hover {
+  margin-top: 5px;
+}

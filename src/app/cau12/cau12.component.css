@@ -1,0 +1,8 @@
+img {
+  height: 150px;
+  width: auto;
+}
+td {
+  width: 200px;
+  border: 1px solid gray;
+}

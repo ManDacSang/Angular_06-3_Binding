@@ -1,0 +1,26 @@
+<p>second works!</p>
+<div>
+  <button (click)="changeView()">change view</button>
+  <div class="view1" *ngIf="display; else view2">
+    <h3>view 1</h3>
+  </div>
+  <ng-template #view2><h2 class="view2">view 2</h2> </ng-template>
+  <hr />
+  <h4>Nguoi dung may tinh</h4>
+  <div *ngFor="let u of users; index as i">
+    <p>STT : {{ i }} Ho Va Ten {{ u.UserName }} dang hoc lop {{ u.Class }}</p>
+  </div>
+  <hr />
+  <div>
+    <p>
+      data from app.component -
+      <b>
+        {{ data }}
+      </b>
+      <b>
+        {{ dataFrom1 }}
+      </b>
+    </p>
+  </div>
+  <button (click)="sendData()">send data</button>
+</div>

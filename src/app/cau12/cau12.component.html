@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <td>mã sản phẩm</td>
+    <td>Tên sản phẩm</td>
+    <td>giá sản phẩm</td>
+    <td>ảnh sản phẩm</td>
+  </tr>
+  <tr *ngFor="let p of Products">
+    <td>{{ p.ID }}</td>
+    <td>{{ p.name }}</td>
+    <td>{{ p.price }}</td>
+    <td><img src="{{ p.image }}" alt="" /></td>
+  </tr>
+</table>
